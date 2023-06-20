@@ -13,6 +13,9 @@ $mainColorWhite: #ffffff;
 body {
   margin: 0;
 }
+ul {
+  list-style: none;
+}
 
 .container {
   max-width: 1078px;
@@ -38,6 +41,7 @@ body {
   font-weight: 700;
   font-family: "Work Sans", "Roboto", sans-serif;
   text-transform: uppercase;
+  text-shadow: 1px 1px 2px $mainTextColor;
 }
 
 .text {
@@ -74,7 +78,6 @@ body {
     align-items: center;
   }
   &__heading {
-    margin-bottom: 38px;
     @media (max-width: 768px) {
       font-size: 28px;
     }
@@ -85,9 +88,13 @@ body {
   }
   &__text {
     font-size: 20px;
-    max-width: 420px;
     margin-bottom: 46px;
     text-align: justify;
+    line-height: 35px;
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+      line-height: 30px;
+    }
   }
   &__btn {
     padding: 20px 44px;
@@ -107,7 +114,15 @@ body {
     max-width: 320px;
     font-size: 20px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 35px;
+    list-style-type: disc;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    @media (max-width: 768px) {
+      line-height: 30px;
+    }
   }
   &__photo {
     max-width: 342px;
@@ -119,15 +134,14 @@ body {
     }
   }
   &__info-service {
-    max-width: 754px;
+    // max-width: 754px;
     margin-bottom: 94px;
-    margin-left: auto;
     position: relative;
     z-index: 1;
-    text-align: right;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
     @media (max-width: 1200px) {
       max-width: 554px;
     }
@@ -161,20 +175,20 @@ body {
 
   &__green {
     background-image: url(./img/green.svg);
-    width: 558px;
-    height: 546px;
+    width: 377px;
+    height: 369px;
     background-size: cover;
     position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
-    @media (max-width: 1200px) {
-      width: 377px;
-      height: 369px;
-    }
     @media (max-width: 768px) {
-      width: 277px;
-      height: 271px;
+      width: 177px;
+      height: 173px;
+    }
+    @media (max-width: 576px) {
+      width: 117px;
+      height: 113px;
     }
   }
   &__yellow {
@@ -520,7 +534,9 @@ body {
 }
 .advantage-block {
   background-color: $backgroundColor;
-  margin-top: 170px;
+  @media (max-width: 1200px) {
+    margin-top: 170px;
+  }
   @media (max-width: 768px) {
     padding-bottom: 120px;
   }
