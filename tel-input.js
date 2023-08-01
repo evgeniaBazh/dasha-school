@@ -1,6 +1,8 @@
 const input = document.querySelector("#phone");
+
 const countryData = window.intlTelInputGlobals.getCountryData();
 const countryInput = document.querySelector("#address-country");
+
 const iti = window.intlTelInput(input, {
   customContainer: "form__input form__phone",
   initialCountry: "auto",
