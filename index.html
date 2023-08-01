@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="intlTelInput.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+    <title>Language school</title>
 </head>
 <body>
     <div class="initial">
@@ -185,11 +187,12 @@
                         <p class="info-block__text text">+34613760530</p>
                     </a>
                 </div>
-                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfz7atl3uxggkUS-B5YrIO1VLSH7gsbPgTnm2K6cD-vqLhAfg/formResponse" class="contacts__form form">
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfz7atl3uxggkUS-B5YrIO1VLSH7gsbPgTnm2K6cD-vqLhAfg/formResponse" class="contacts__form form">
                     <h3 class="form__header">Напишите мне</h3>
                     <div class="form__wrap">
                         <input name="entry.723539273" class="form__input text" placeholder="Имя" type="text">
-                        <input name="entry.1719845650" class="form__input text" placeholder="Телефон" type="tel">
+                        <input name="entry.1719845650" class="text"  type="tel" id="phone">
+                        <input style="display: none;" name="entry.1176467913" placeholder="Cтрана" type="text" id="address-country"/>
                         <input name="entry.833595627" class="form__input text" placeholder="E-mail" type="email">
                         <textarea class="form__input text" placeholder="Текст" name="entry.1712140515" id="" cols="10" rows="4"></textarea>
                         <button class="form__btn btn">Отправить</button>
@@ -227,5 +230,9 @@
         });
     </script>
     <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/utils.min.js"></script>
+    <script src="./tel-input.js"></script>
+    
 </body>
 </html>

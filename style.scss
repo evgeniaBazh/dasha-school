@@ -16,6 +16,10 @@ body {
 ul {
   list-style: none;
 }
+input {
+  border: none;
+  outline: none;
+}
 
 .container {
   max-width: 1078px;
@@ -884,6 +888,9 @@ ul {
     border: 1px solid $colorBlue;
     padding: 5px 12px;
     margin-bottom: 15px;
+  }
+  &__phone {
+    padding: 4px 0;
   }
   &__btn {
     padding: 7px 57px;
